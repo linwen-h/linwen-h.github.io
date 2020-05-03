@@ -70,30 +70,43 @@ h1 {
   color: #ffffff;
 }
 
-/* Cursor */
-.txt-type > .txt {
-  border-right: 0.1rem solid #ffffff;
-  animation: animated-text 4s steps(29,end) 1s 1 normal both,
-             animated-cursor 600ms steps(29,end) infinite;
+.cursor::after {
+  content:'';
+  display:inline-block;
+  margin-left:3px;
+  background-color:rgba(0,255,0,.75);
+  animation-name:blink;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
 }
 
-/* text animation */
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 472px;}
+div.cursor::after {
+  height: 2rem;
+  width:1px;
 }
 
-/* cursor animations */
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
+@keyframes blink {
+  0% {
+    opacity:1;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
 }
 
 @media(min-width:1200px) {
   h1 {
     font-size: 2.5rem
+  }
+
+  div.cursor::after {
+    height: 2.5rem;
   }
 }
 
@@ -101,11 +114,19 @@ h1 {
   h1 {
     font-size: 1.5rem
   }
+
+  div.cursor::after {
+    height: 1.5rem;
+  }
 }
 
 @media(max-width:500px) {
   h1 {
     font-size: 1rem
+  }
+
+  div.cursor::after {
+    height: 1rem;
   }
 }
 
