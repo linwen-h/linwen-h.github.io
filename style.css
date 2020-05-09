@@ -141,10 +141,11 @@ div.cursor::after {
 }
 
 .infra_note {
-  padding-left: 30%;
+  padding-left: 10%;
+  padding-top: 0;
 }
 .meeting_note {
-  padding-top: 20%;
+  padding-top: 5%;
 }
 
 @keyframes blink {
