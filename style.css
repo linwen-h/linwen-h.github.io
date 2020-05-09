@@ -101,12 +101,16 @@ a:hover {
 
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: center; */
   height:100%;
   /* padding: 0, 3rem; */
-  padding-left: 20%
+  padding-left: 15%;
+}
+
+.text_div {
+  padding-top: 20%;
 }
 
 /* Main Page */
@@ -130,6 +134,17 @@ h1 {
 div.cursor::after {
   height: 2rem;
   width:1px;
+}
+
+.sticky_note {
+  width: 18rem;
+}
+
+.infra_note {
+  padding-left: 30%;
+}
+.meeting_note {
+  padding-top: 20%;
 }
 
 @keyframes blink {
@@ -159,6 +174,10 @@ div.cursor::after {
   scroll_arrow {
     max-width: 5rem;
   }
+
+  .sticky_note {
+    width: 22rem;
+  }
 }
 
 @media(max-width:800px) {
@@ -172,6 +191,10 @@ div.cursor::after {
 
   scroll_arrow {
     max-width: 3.5rem;
+  }
+
+  .sticky_note {
+    width: 15rem;
   }
 }
 
@@ -187,6 +210,12 @@ div.cursor::after {
   .scroll_arrow {
     max-width: 3rem;
   }
+
+  .sticky_note {
+    width: 12rem;
+  }
+  
+
 }
 
 
