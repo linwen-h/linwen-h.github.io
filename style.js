@@ -52,7 +52,6 @@ class TypeWriter {
                 this.wordIndex++;
                 typeSpeed = 500;
             }
-            // TODO we want to make this stop after length of the array
             if (this.wordIndex != this.words.length){
                 setTimeout(() => this.type(), typeSpeed);
             }
@@ -61,7 +60,7 @@ class TypeWriter {
             const currStr = txtArr[index];
             this.txt = currStr.substring(0, this.txt.length + 1);
             
-            if (this.txt.length == 1){
+            if (this.txt.length == 1) {
                 let newDiv = document.createElement("div");
                 newDiv.classList.add("cursor");
                 newDiv.innerHTML =`${this.txt}`;
@@ -79,7 +78,7 @@ class TypeWriter {
 
             if (this.multiLineWord < txtArr.length) {
                 // this.multiLineWord ++;
-                setTimeout(() => this.type(), 150);
+                setTimeout(() => this.type(), 100);
             } else {
                 this.finishedMultiLine = true;
                 this.line = currStr;
