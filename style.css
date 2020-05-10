@@ -137,7 +137,7 @@ div.cursor::after {
 }
 
 .sticky_note {
-  width: 18rem;
+  max-width: 18rem;
 }
 
 .infra_note {
@@ -172,12 +172,12 @@ div.cursor::after {
     height: 2.5rem;
   }
 
-  scroll_arrow {
+  .scroll_arrow {
     max-width: 5rem;
   }
 
   .sticky_note {
-    width: 22rem;
+    max-width: 22rem;
   }
 }
 
@@ -190,12 +190,12 @@ div.cursor::after {
     height: 1.5rem;
   }
 
-  scroll_arrow {
+  .scroll_arrow {
     max-width: 3.5rem;
   }
 
   .sticky_note {
-    width: 15rem;
+    max-width: 15rem;
   }
 }
 
@@ -213,7 +213,7 @@ div.cursor::after {
   }
 
   .sticky_note {
-    width: 12rem;
+    max-width: 12rem;
   }
   
 
