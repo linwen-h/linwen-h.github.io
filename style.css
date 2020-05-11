@@ -136,8 +136,15 @@ div.cursor::after {
   width:1px;
 }
 
+.stickies {
+  display: flex;
+  flex-direction: column;
+}
+
 .sticky_note {
   max-width: 18rem;
+  height: auto;
+  width: auto;
 }
 
 .infra_note {
